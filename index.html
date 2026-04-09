@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Panda Anime </title>
+    <title>Untitled Document</title>
     <!-- Bootstrap -->
 	<link href="css/bootstrap-5.3.8.css" rel="stylesheet">
 	
@@ -64,37 +64,39 @@ ler-icon"></span>
      <img src="images/Untitled-2_17.png" width="1920" height="1030" alt=""/>
 <br>
 	<br>	  
-    <div class="content">
+    <div class="contener text-center">
        <br><br> 
     </div>
 </div>
-
-<div class="cards" align="center">
-   <div class="movie-card">
+  <div class="container"></div>
+<div class="cards" align="center text-center">
+   <div class="movie-card text-center">
+	   
             <img src="images/images/Untitled-2_23.png" width="245" height="" alt=""/>
 <div class="movie-title">Frieren: Beyond Journey's End</div>
             <div class="sub">Sub | Dub</div>
   </div>
 
-    <div class="movie-card" align="center">
+    <div class="movie-card text-center" align="center">
            <img src="images/images/Untitled-2_30.png" width="245" height="" alt=""/>
 <div class="movie-title">Fire Force</div>
             <div class="sub">Sub | Dub</div>
   </div>
-    <div class="movie-card" align="center">
+    <div class="movie-card text-center" align="center">
             <img src="images/images/Untitled-2_25.png" width="245" height="" alt=""/>
 <div class="movie-title">The Daily Life of the Immortal King</div>
             <div class="sub">Sub | Dub</div>
   </div>
-    <div class="movie-card" align="center">
+    <div class="movie-card text-center" align="center">
            <img src="images/images/Untitled-2_27.png" width="245" height="" alt=""/>
 <div class="movie-title">The 100 Girlfriends</div>
             <div class="sub">Sub | Dub</div>
   </div>
-    <div class="movie-card" align="center">
+    <div class="movie-card text-center" align="center">
             <img src="images/images/Untitled-2_33.png" width="245" height="" alt=""/>
 <div class="movie-title">That Time I Got Reincarnated</div>
             <div class="sub">Sub | Dub</div>
+		</div>
   </div>
 </div>
 	<div class="movie-row">
@@ -104,29 +106,29 @@ ler-icon"></span>
 		<br>
 </div>
 <div class="cards">
-   <div class="movie-card" align="center">
+   <div class="movie-card text-center" align="center">
           <img src="images/images/Untitled-2_47.png" width="245" height="" alt=""/>
 <div class="movie-title">One Piece</div>
             
   </div>
 
-          <div class="movie-card" align="center">
+          <div class="movie-card text-center" align="center">
           <img src="images/images/Untitled-2_49.png" width="245" height="" alt=""/>
 <div class="movie-title">Dandadan</div>
             
     </div>
 
-    <div class="movie-card" align="center">
+    <div class="movie-card text-center" align="center">
          <img src="images/images/Untitled-2_52.png" width="245" height="" alt=""/>
 <div class="movie-title">Jujutsu Kaisen</div>
            
     </div>
-    <div class="movie-card" align="center">
+    <div class="movie-card text-center" align="center">
           <img src="images/images/Untitled-2_53.png" width="245" height="" alt=""/>
 <div class="movie-title">Boruto</div>
             
     </div>
-    <div class="movie-card" align="center">
+    <div class="movie-card text-center" align="center">
           <img src="images/images/Untitled-2_55.png" width="245" height="" alt=""/>
 <div class="movie-title">Bleach</div>
     </div>
@@ -165,14 +167,12 @@ ler-icon"></span>
 
 /* Cards container */
 .cards {
-    display: flex;
-    gap: 20px;
-    padding: 0 40px;
-
-    /* 🔥 THIS CREATES FLOAT EFFECT */
-    margin-top: -60px;
-    position: relative;
-    z-index: 3;
+  display: flex;
+  flex-wrap: wrap;              /* 🔥 allows resizing on zoom */
+  justify-content: center;      /* center alignment */
+  gap: 2vw;                     /* responsive spacing */
+  padding: 2vw;
+  margin-top: -60px;                /* ❌ remove the -60px */
 }
 
 /* Individual cards */
@@ -220,8 +220,10 @@ ler-icon"></span>
 
 /* Cards container */
 .cards {
-    display: flex;
+	transition: transform 0.3s ease–
+   flex: 1 1 200px; 
     gap: 20px;
+	flex-wrap: wrap; /* grow, shrink, base width */
     padding: 40px;
 
     /* 🔥 THIS CREATES FLOAT EFFECT */
